@@ -5,9 +5,13 @@ Node JS Code to encrypt decrypt text using AES 256 algorithm
 When cloning the repository or running this code for the first time, ensure to follow the below steps.
 
 1. Generate initialization vector (IV) using below code.
-`$ node geniv.js`
-2. Generate a random key that shall be used for encryption and decryption.
-`$ node genkey.js`
+   ```
+   $ node geniv.js
+   ```
+3. Generate a random key that shall be used for encryption and decryption.
+   ```
+   $ node genkey.js
+   ```
 
 _Ensure that the above is same when encrypting and decrypting the values. If the key and / or initialization vector is changed then the values can only be decrypted with the key and initialization vector that was used to encrypt it._
 
@@ -15,20 +19,40 @@ _The code doesn't store / backup the old keys / IVs. If the key or initializatio
 
 ### Encryption
 To encrypt a value, please use the below code.
-`$ node encrypt.js Sample`
-`Encrypted Text: urCm855UsHikvdR5TTVQ7g==`
+```
+$ node encrypt.js Sample
+```
+Output:
+```
+Encrypted Text: urCm855UsHikvdR5TTVQ7g==
+```
 
 To encrypt a value that has more than one word, please use the below code.
-`$ node encrypt.js "Sample Text"`
-`Encrypted Text: B+Fyi+LKlVg86QdriBHhRw==`
+```
+$ node encrypt.js "Sample Text"
+```
+Output:
+```
+Encrypted Text: B+Fyi+LKlVg86QdriBHhRw==
+```
 
 ### Decryption
 To decrypt a value, ensure only base64 format values are passed. As of current version, the tool only supports base64 encoded texts.
-`$ node decrypt.js urCm855UsHikvdR5TTVQ7g==`
-`Decrypted Text: Sample`
+```
+$ node decrypt.js urCm855UsHikvdR5TTVQ7g==
+```
+Output:
+```
+Decrypted Text: Sample
+```
 
-`$ node decrypt.js B+Fyi+LKlVg86QdriBHhRw==`
-`Decrypted Text: Sample Text`
+```
+$ node decrypt.js B+Fyi+LKlVg86QdriBHhRw==
+```
+Output:
+```
+Decrypted Text: Sample Text
+```
 
 ### Code
 **Code Author**: Sumit Shrivastava ([@invad3rsam](https://twitter.com/invad3rsam))
