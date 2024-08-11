@@ -1,12 +1,16 @@
 {
-  "name": "aes",
+  "name": "node-aes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node JS Code to encrypt decrypt text using AES 256 algorithm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Sumit Shrivastava",
+  "license": "ISC",
+  "dependencies": {
+    "aes": "file:",
+    "node-aes": "file:"
+  }
 }
